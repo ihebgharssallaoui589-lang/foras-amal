@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فرص عمل تونس</title>
+<style>
+body{margin:0;background:#101827;color:#fff;font-family:Arial,sans-serif;padding:20px}
+header{font-size:28px;font-weight:bold;color:#40dfaa}
+h1{font-size:30px;line-height:1.5}
+p{color:#b8c5d8;line-height:1.8}
+.box{background:#1c293d;padding:18px;border-radius:15px;margin-top:20px}
+label{display:block;margin-top:15px}
+select,button{width:100%;padding:13px;margin-top:7px;border-radius:9px;font-size:16px}
+select{background:#101827;color:white;border:1px solid #42516a}
+button{background:#40dfaa;border:0;font-weight:bold;margin-top:22px}
+.job{background:#27374d;padding:14px;border-radius:10px;margin-top:12px}
+small{color:#ffcf70}
+</style>
+</head>
+<body>
+<header>فرص عمل 🇹🇳</header>
+<h1>خدمتك المناسبة<br><span style="color:#40dfaa">تبدأ من هنا!</span></h1>
+<p>اختار ولايتك ومستواك ومجالك، واكتشف أنواع الوظائف اللي تنجم تناسبك.</p>
+<div class="box">
+<h2>🔎 ابحث على خدمة</h2>
+<label>الولاية</label>
+<select id="region">
+<option>صفاقس</option><option>سوسة</option><option>تونس</option>
+<option>القيروان</option><option>المنستير</option><option>المهدية</option>
+<option>نابل</option><option>بنزرت</option><option>قابس</option>
+<option>مدنين</option><option>القصرين</option><option>سيدي بوزيد</option>
+<option>قفصة</option><option>توزر</option><option>قبلي</option>
+<option>تطاوين</option><option>جندوبة</option><option>الكاف</option>
+<option>سليانة</option><option>باجة</option><option>زغوان</option>
+<option>بن عروس</option><option>أريانة</option><option>منوبة</option>
+</select>
+<label>المستوى الدراسي</label>
+<select id="level">
+<option value="basic">ابتدائي أو أساسي</option>
+<option value="secondary">مستوى باكالوريا</option>
+<option value="training">تكوين مهني</option>
+<option value="higher">تعليم عالي</option>
+</select>
+<label>الخبرة</label>
+<select id="exp"><option value="no">من غير خبرة</option><option value="yes">عندي خبرة</option></select>
+<label>المجال</label>
+<select id="field">
+<option value="all">أي مجال</option><option value="sales">بيع ومحلات</option>
+<option value="factory">مصانع ومخازن</option><option value="office">إدارة واستقبال</option>
+<option value="food">طبخ وفنادق</option><option value="computer">إعلامية</option>
+</select>
+<button onclick="searchJobs()">🎯 ورّيني الفرص المناسبة</button>
+</div>
+<div id="results"></div>
+<p><small>ملاحظة: النتائج الحالية أمثلة للتجربة وليست عروض عمل مؤكدة. نعملوا على ربط الموقع بمصادر حقيقية.</small></p>
+<script>
+const jobs=[
+{t:"بائع في محل تجاري",f:"sales",e:"no",l:["basic","secondary","training","higher"],s:"بيع، تعامل مع الحرفاء"},
+{t:"عون مخزن",f:"factory",e:"no",l:["basic","secondary","training","higher"],s:"تنظيم السلع والعمل ضمن فريق"},
+{t:"عامل إنتاج",f:"factory",e:"no",l:["basic","secondary","training","higher"],s:"الانضباط واحترام السلامة"},
+{t:"عون استقبال",f:"office",e:"no",l:["secondary","training","higher"],s:"التواصل والتنظيم"},
+{t:"مساعد مطبخ",f:"food",e:"no",l:["basic","secondary","training","higher"],s:"النظافة والعمل ضمن فريق"},
+{t:"عون إدخال بيانات",f:"computer",e:"no",l:["secondary","training","higher"],s:"استعمال الحاسوب والدقة"}
+];
+function searchJobs(){
+let r=document.getElementById("region").value,l=document.getElementById("level").value,e=document.getElementById("exp").value,f=document.getElementById("field").value;
+let list=jobs.filter(j=>j.l.includes(l)&&(e==="yes"||j.e==="no")&&(f==="all"||j.f===f));
+document.getElementById("results").innerHTML="<h2>النتائج في "+r+"</h2>"+(list.length?list.map(j=>'<div class="job"><h3>'+j.t+'</h3><p>📍 الولاية المختارة: '+r+'</p><p>🛠️ المهارات: '+j.s+'</p><small>مثال تجريبي — العرض غير مؤكّد وغير متاح للترشّح من هذه الصفحة.</small></div>').join(""):"<div class='box'>ما لقيناش أمثلة مناسبة. جرّب مجالاً آخر.</div>");
+}
+</script>
+</body>
+</html>
+
+<hr>
+<section style="padding:20px;text-align:center">
+<h2>🌍 مواقع عروض الشغل الحقيقية</h2>
+<a href="https://www.aneti.tn/" target="_blank" style="display:block;padding:12px;margin:8px;background:#176b50;color:white;border-radius:10px">🇹🇳 ANETI — خدمة في تونس</a>
+<a href="https://eures.europa.eu/" target="_blank" style="display:block;padding:12px;margin:8px;background:#174a83;color:white;border-radius:10px">🇪🇺 EURES — فرص عمل في أوروبا</a>
+<a href="https://www.francetravail.fr/" target="_blank" style="display:block;padding:12px;margin:8px;background:#174a83;color:white;border-radius:10px">🇫🇷 France Travail — خدمة في فرنسا</a>
+<a href="https://www.arbeitsagentur.de/" target="_blank" style="display:block;padding:12px;margin:8px;background:#174a83;color:white;border-radius:10px">🇩🇪 ألمانيا — وكالة التشغيل الرسمية</a>
+</section>
