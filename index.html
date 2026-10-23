@@ -137,5 +137,56 @@ fetch('./jobs.json')
   })
   .catch(error => console.error('خطأ:', error));
 </script>
-   </body>
+  <section id="live-jobs" dir="rtl" style="padding:20px;max-width:900px;margin:auto;color:white">
+  <h2>🌍 مصادر فرص العمل في تونس وأوروبا</h2>
+  <p id="jobs-status">جاري تحميل المصادر...</p>
+  <div id="jobs-list"></div>
+</section>
+
+<script>
+fetch('./jobs.json')
+  .then(response => {
+    if (!response.ok) throw new Error('تعذّر تحميل البيانات');
+    return response.json();
+  })
+  .then(data => {
+    const list = document.getElementById('jobs-list');
+    const status = document.getElementById('jobs-status');
+
+    status.textContent = 'آخر تحديث: ' +
+      (data.updated_at
+        ? new Date(data.updated_at).toLocaleString('ar-TN')
+        : 'غير معروف');
+
+    data.jobs.forEach(job => {
+      const card = document.createElement('div');
+      card.style.cssText =
+        'background:#1e293b;padding:16px;margin:12px 0;border-radius:12px';
+
+      const title = document.createElement('h3');
+      title.textContent = job.title || 'مصدر فرص عمل';
+
+      const country = document.createElement('p');
+      country.textContent = '🌍 البلد: ' + (job.country || 'غير محدد');
+
+      const company = document.createElement('p');
+      company.textContent = 'المصدر: ' + (job.company || 'غير محدد');
+
+      const link = document.createElement('a');
+      link.href = job.url;
+      link.textContent = '🔗 تصفّح عروض الشغل';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.style.color = '#38bdf8';
+
+      card.append(title, country, company, link);
+      list.appendChild(card);
+    });
+  })
+  .catch(() => {
+    document.getElementById('jobs-status').textContent =
+      'تعذّر تحميل المصادر. حاول مرة أخرى لاحقًا.';
+  });
+</script>
+</body>
 </html>
