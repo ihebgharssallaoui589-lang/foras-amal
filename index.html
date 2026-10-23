@@ -127,7 +127,6 @@ form.addEventListener("submit",searchResources);
 form.addEventListener("reset",()=>setTimeout(()=>document.getElementById("results").replaceChildren(),0));
 </script>
 <script>
-<script>
 fetch('./jobs.json')
   .then(response => {
     if (!response.ok) throw new Error('تعذّر تحميل الملف');
