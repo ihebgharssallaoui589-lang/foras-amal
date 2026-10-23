@@ -126,5 +126,12 @@ function searchResources(ev){
 form.addEventListener("submit",searchResources);
 form.addEventListener("reset",()=>setTimeout(()=>document.getElementById("results").replaceChildren(),0));
 </script>
-</body>
+<script>
+fetch('./jobs.json')
+  .then(response => {
+    if (!response.ok) throw new Error('تعذّر تحميل الملف');
+    return response.json();
+  })
+  .then(data => {
+   </body>
 </html>
