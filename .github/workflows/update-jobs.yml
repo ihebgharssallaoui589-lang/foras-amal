@@ -24,8 +24,10 @@ jobs:
       - name: تثبيت المكتبات
         run: pip install requests beautifulsoup4
 
-      - name: جلب عروض الشغل
-        run: python update_jobs.py
+            - name: اختبار الاتصال بموقع ANETI
+        run: |
+          curl -Iv --connect-timeout 15 https://international.emploi.nat.tn/ || true
+          curl -Iv --connect-timeout 15 http://international.emploi.nat.tn/ || true
 
       - name: حفظ التحديثات
         run: |
