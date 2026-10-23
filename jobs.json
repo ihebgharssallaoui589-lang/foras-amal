@@ -1,29 +1,45 @@
 {
-  "updated_at": "2026-10-23T12:30:16.513563+00:00",
+  "updated_at": "2026-10-23T19:00:00+01:00",
   "jobs": [
     {
-      "title": "عروض الشغل الدولية",
-      "country": "دولي",
+      "title": "LINGERE",
+      "country": "فرنسا - حسب تفاصيل العرض",
       "company": "ANETI International",
-      "url": "https://www.aneti-international.tn/en"
+      "date": "",
+      "url": "https://international.emploi.nat.tn/node/1064795",
+      "source": "ANETI International"
     },
     {
-      "title": "عروض الشغل في أوروبا",
-      "country": "أوروبا",
-      "company": "EURES",
-      "url": "https://eures.europa.eu/index_en"
+      "title": "Femme de ménage",
+      "country": "حسب تفاصيل العرض",
+      "company": "ANETI International",
+      "date": "",
+      "url": "https://international.emploi.nat.tn/node/1064776",
+      "source": "ANETI International"
     },
     {
-      "title": "عروض الشغل في فرنسا",
-      "country": "فرنسا",
-      "company": "France Travail",
-      "url": "https://www.francetravail.fr/"
+      "title": "CHEF DE PARTIE",
+      "country": "حسب تفاصيل العرض",
+      "company": "ANETI International",
+      "date": "",
+      "url": "https://international.emploi.nat.tn/node/1062656",
+      "source": "ANETI International"
     },
     {
-      "title": "عروض الشغل في ألمانيا",
-      "country": "ألمانيا",
-      "company": "Bundesagentur für Arbeit",
-      "url": "https://www.arbeitsagentur.de/"
+      "title": "CHEF DE RANG",
+      "country": "حسب تفاصيل العرض",
+      "company": "ANETI International",
+      "date": "",
+      "url": "https://international.emploi.nat.tn/node/1062645",
+      "source": "ANETI International"
+    },
+    {
+      "title": "Chauffeur livreur, manutentionnaire, assistant logistique",
+      "country": "حسب تفاصيل العرض",
+      "company": "ANETI International",
+      "date": "",
+      "url": "https://international.emploi.nat.tn/node/1060381",
+      "source": "ANETI International"
     }
   ]
 }
