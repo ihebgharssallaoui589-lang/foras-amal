@@ -1,0 +1,51 @@
+import json
+import urllib.request
+from datetime import datetime, timezone
+
+SOURCES = [
+    {
+        "name": "ANETI International",
+        "url": "https://www.aneti-international.tn/en",
+        "country": "عروض دولية"
+    },
+    {
+        "name": "EURES",
+        "url": "https://eures.europa.eu/index_en",
+        "country": "أوروبا"
+    },
+    {
+        "name": "France Travail",
+        "url": "https://www.francetravail.fr/",
+        "country": "فرنسا"
+    },
+    {
+        "name": "Bundesagentur für Arbeit",
+        "url": "https://www.arbeitsagentur.de/",
+        "country": "ألمانيا"
+    }
+]
+
+jobs = []
+
+for source in SOURCES:
+    jobs.append({
+        "title": "تفقّد عروض الشغل المتاحة",
+        "country": source["country"],
+        "company": source["name"],
+        "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "url": source["url"],
+        "source": source["name"]
+    })
+
+with open("jobs.json", "w", encoding="utf-8") as file:
+    json.dump(
+        {
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "jobs": jobs
+        },
+        file,
+        ensure_ascii=False,
+        indent=2
+    )
+
+print(f"تم حفظ {len(jobs)} روابط لمصادر الشغل.")
