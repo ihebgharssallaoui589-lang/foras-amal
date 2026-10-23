@@ -21,7 +21,10 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: تحديث روابط مصادر الشغل
+      - name: تثبيت المكتبات
+        run: pip install requests beautifulsoup4
+
+      - name: جلب عروض الشغل
         run: python update_jobs.py
 
       - name: حفظ التحديثات
@@ -29,6 +32,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add jobs.json
-          git diff --cached --quiet || git commit -m "تحديث مصادر الشغل"
+          git diff --cached --quiet || git commit -m "تحديث عروض الشغل"
           git push
   
