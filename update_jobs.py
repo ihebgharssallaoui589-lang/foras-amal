@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://international.emploi.nat.tn"
-OFFERS_URL = BASE_URL + "/offres"
+OFFERS_URL = BASE_URL + "/"
 
 headers = {
     "User-Agent": "Mozilla/5.0 (compatible; ForasAmal/1.0)"
