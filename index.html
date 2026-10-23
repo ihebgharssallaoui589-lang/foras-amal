@@ -4,235 +4,191 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0b1220">
-<meta name="description" content="اكتشف مواقع البحث عن فرص العمل في تونس وأوروبا.">
+<meta name="description" content="دليل فرص العمل في تونس وأوروبا ومواقع التشغيل الرسمية">
 <title>فرص عمل تونس | فرصتك تبدأ هنا</title>
 <style>
 :root{--bg:#0b1220;--panel:#121d30;--line:#263650;--text:#f4f7fc;--muted:#a8b5c9;--green:#5ee0b0;--blue:#81aaff}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
 a{color:inherit;text-decoration:none}
-.wrap{width:min(1080px,92%);margin:auto}
-header{border-bottom:1px solid var(--line);background:#0b1220ee;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0}
-.logo{font-size:19px;font-weight:900}.logo span{color:var(--green)}
-.nav a.small{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:7px 11px;border-radius:10px}
-.hero{padding:45px 0 28px;background:radial-gradient(ellipse at top right,#183f4b 0,transparent 58%)}
-.badge{display:inline-block;color:var(--green);background:#14352f;padding:5px 12px;border-radius:30px;font-size:13px}
-h1{font-size:clamp(30px,7vw,52px);line-height:1.3;margin:17px 0 10px;letter-spacing:-1px}
-h1 span{color:var(--green)}
-.intro{color:var(--muted);max-width:650px;margin:0 0 24px}
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
-.stat{background:#122235;border:1px solid var(--line);padding:10px 14px;border-radius:12px;font-size:13px;color:#dbe7f7}
-.stat b{color:var(--green)}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;margin:15px 0 30px;box-shadow:0 15px 40px #0002}
-h2{font-size:23px;margin:0 0 8px}
-.sub{color:var(--muted);font-size:14px;margin:0 0 18px}
-label{display:block;font-size:13px;color:#dbe7f7;margin-bottom:7px}
-input,select{width:100%;padding:13px;border:1px solid #30425c;border-radius:11px;background:#0c1525;color:white;font:inherit;outline:none}
-input:focus,select:focus{border-color:var(--green)}
-.filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:7px;padding:12px 16px;border-radius:11px;font-weight:800;border:0;cursor:pointer;font:inherit}
-.primary{background:var(--green);color:#09251e}
-.secondary{background:#1c2d46;color:white;border:1px solid #344964}
-.actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
-.actions .btn{flex:1}
-.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:35px 0 15px}
-.section-title p{color:var(--muted);font-size:13px;margin:3px 0}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.card{padding:18px;border-radius:17px;background:var(--panel);border:1px solid var(--line);transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-3px);border-color:#4d7e87}
-.icon{width:43px;height:43px;display:grid;place-items:center;background:#20374a;border-radius:13px;font-size:23px;margin-bottom:12px}
-.card h3{margin:0 0 7px;font-size:18px}
-.card p{color:var(--muted);font-size:13px;margin:0 0 13px}
-.tag{display:inline-block;background:#1d3044;color:#b9d2ed;border-radius:7px;padding:4px 8px;font-size:11px;margin:2px}
-.linkcard{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.arrow{color:var(--green);font-size:22px}
-.notice{border:1px solid #67552a;background:#2b2518;color:#f3d99a;padding:13px;border-radius:12px;font-size:13px;margin-top:16px}
-footer{border-top:1px solid var(--line);margin-top:45px;padding:25px 0;color:var(--muted);font-size:12px;text-align:center}
-.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:25px}
-@media(max-width:600px){.hero{padding-top:32px}.filters,.cards{grid-template-columns:1fr}.panel{padding:16px}.section-title{align-items:flex-start}.nav a.small{font-size:12px}.logo{font-size:17px}}
+.wrap{width:min(1000px,92%);margin:auto}
+header{border-bottom:1px solid var(--line);padding:15px 0;background:#0b1220}
+.logo{font-size:22px;font-weight:900;color:var(--green)}
+.hero{padding:35px 0}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.4;margin:10px 0}
+.muted{color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin:20px 0}
+h2{font-size:22px;margin:0 0 12px}
+.filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{display:block;margin-bottom:5px;font-size:14px}
+input,select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:white;font:inherit}
+button,.button{display:inline-block;padding:11px 15px;border:0;border-radius:10px;background:var(--green);color:#09251e;font-weight:bold;font:inherit;cursor:pointer;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px;overflow-wrap:anywhere}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{color:var(--muted);font-size:14px}
+.tag{display:inline-block;background:#20374a;padding:3px 8px;border-radius:7px;font-size:12px;margin:3px}
+.status{padding:12px;border-radius:10px;background:#17263b;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:25px 0;font-size:13px}
+@media(max-width:600px){.filters,.grid{grid-template-columns:1fr}.hero{padding:25px 0}}
 </style>
 </head>
 <body>
 <header>
- <div class="wrap nav">
-  <a class="logo" href="#"><span>◆</span> فرص عمل تونس</a>
-  <a class="small" href="#official">مواقع التشغيل الرسمية ↗</a>
- </div>
+<div class="wrap"><a class="logo" href="#">◆ فرص عمل تونس</a></div>
 </header>
+
 <main class="wrap">
- <section class="hero">
-  <span class="badge">🇹🇳 دليلك للبحث عن خدمة</span>
-  <h1>خدمتك الجاية<br><span>تبدأ بخطوة.</span></h1>
-  <p class="intro">اكتشف مواقع التشغيل، حضّر للترشّح، وفتّش على الفرص المناسبة لمستواك وخبرتك في تونس وأوروبا.</p>
-  <div class="stats">
-   <div class="stat">📍 <b>تونس</b> وفرص محلية</div>
-   <div class="stat">🌍 <b>أوروبا</b> ومواقع رسمية</div>
-   <div class="stat">📱 <b>سهل</b> على التليفون</div>
-  </div>
- </section>
+<section class="hero">
+<span class="tag">🇹🇳 تونس · 🇪🇺 أوروبا</span>
+<h1>خدمتك الجاية<br><span style="color:var(--green)">تبدأ بخطوة</span></h1>
+<p class="muted">فتّش على فرص الشغل، واكتشف مواقع التشغيل الرسمية، وتثبّت من تفاصيل كل عرض قبل الترشّح.</p>
+</section>
 
- <section class="panel" id="search">
-  <h2>🔎 لوج على فرصتك</h2>
-  <p class="sub">اختار المجال والمستوى باش تلقى مواقع مناسبة للبحث.</p>
-  <form id="searchForm">
-   <div class="filters">
-    <div><label for="region">الولاية أو الوجهة</label>
-     <select id="region"><option value="all">كل المناطق</option><option>صفاقس</option><option>سوسة</option><option>تونس</option><option>المنستير</option><option>بقية الولايات</option><option>أوروبا</option></select>
-    </div>
-    <div><label for="field">مجال الخدمة</label>
-     <select id="field"><option value="all">كل المجالات</option><option value="vente">بيع ومغازات</option><option value="bureau">إدارة واستقبال</option><option value="usine">مصانع ومخازن</option><option value="hotel">سياحة وفندقة</option><option value="it">إعلامية</option><option value="international">خارج تونس</option></select>
-    </div>
-    <div><label for="level">المستوى الدراسي</label>
-     <select id="level"><option value="all">كل المستويات</option><option value="sans">بدون شهادة</option><option value="bac">مستوى باك</option><option value="diploma">شهادة تكوين</option><option value="higher">تعليم عالي</option></select>
-    </div>
-    <div><label for="experience">الخبرة</label>
-     <select id="experience"><option value="all">الكل</option><option value="no">بدون خبرة</option><option value="yes">عندي خبرة</option></select>
-    </div>
-   </div>
-   <div class="actions"><button class="btn primary" type="submit">🔍 اعرض الدليل المناسب</button><button class="btn secondary" type="reset">مسح الاختيارات</button></div>
-  </form>
-  <div id="results" aria-live="polite"></div>
- </section>
+<section class="panel">
+<h2>🔎 فتّش في عروض الشغل</h2>
+<div class="filters">
+<div>
+<label for="search">كلمة مفتاحية</label>
+<input id="search" placeholder="مثال: vendeur, informatique...">
+</div>
+<div>
+<label for="country">الوجهة</label>
+<select id="country">
+<option value="">الكل</option>
+<option value="تونس">تونس</option>
+<option value="أوروبا">أوروبا</option>
+</select>
+</div>
+</div>
+<button id="searchBtn" type="button">🔍 ابحث</button>
+<button id="resetBtn" type="button" style="background:#263650;color:white">مسح البحث</button>
+<p id="jobs-status" class="status" aria-live="polite">جاري تحميل عروض الشغل...</p>
+<div id="jobs-list" class="grid"></div>
+</section>
 
- <div class="section-title"><div><h2>🌐 وين تنجم تفتّش؟</h2><p>روابط مباشرة لمواقع تشغيل معروفة</p></div></div>
- <section class="cards" id="official">
-  <a class="card linkcard" href="https://www.aneti.tn/" target="_blank" rel="noopener"><div><div class="icon">🇹🇳</div><h3>ANETI</h3><p>الوكالة الوطنية للتشغيل والعمل المستقل في تونس.</p><span class="tag">تونس</span><span class="tag">تشغيل</span></div><span class="arrow">↗</span></a>
-  <a class="card linkcard" href="https://eures.europa.eu/" target="_blank" rel="noopener"><div><div class="icon">🇪🇺</div><h3>EURES</h3><p>معلومات وفرص عمل داخل أوروبا.</p><span class="tag">أوروبا</span><span class="tag">رسمي</span></div><span class="arrow">↗</span></a>
-  <a class="card linkcard" href="https://www.francetravail.fr/" target="_blank" rel="noopener"><div><div class="icon">🇫🇷</div><h3>France Travail</h3><p>البحث عن عمل ومعلومات التشغيل في فرنسا.</p><span class="tag">فرنسا</span></div><span class="arrow">↗</span></a>
-  <a class="card linkcard" href="https://www.arbeitsagentur.de/" target="_blank" rel="noopener"><div><div class="icon">🇩🇪</div><h3>Arbeitsagentur</h3><p>وكالة التشغيل الفيدرالية الألمانية.</p><span class="tag">ألمانيا</span><span class="tag">Ausbildung</span></div><span class="arrow">↗</span></a>
- </section>
- <div class="notice">⚠️ تنبيه: الموقع دليل وروابط للبحث فقط. لا توجد عروض عمل مؤكدة أو ترشّحات مباشرة هنا. تثبّت من الشروط وصحّة العرض قبل إرسال وثائقك أو دفع أي مبلغ.</div>
- <footer>© 2026 فرص عمل تونس · دليلك للبحث عن فرصة مناسبة</footer>
+<section class="panel">
+<h2>🌐 مواقع التشغيل الرسمية</h2>
+<p class="muted">روابط تساعدك تبحث عن فرص أخرى. فتح الموقع لا يعني أن الوظيفة متاحة أو أنك قُبلت فيها.</p>
+<div class="grid">
+<a class="card" href="https://www.aneti.tn/" target="_blank" rel="noopener noreferrer">
+<h3>🇹🇳 ANETI</h3><p>الوكالة الوطنية للتشغيل والعمل المستقل في تونس.</p><span class="tag">تونس</span>
+</a>
+<a class="card" href="https://international.emploi.nat.tn/" target="_blank" rel="noopener noreferrer">
+<h3>🌍 ANETI International</h3><p>اطّلع على عروض التشغيل بالخارج المنشورة عبر الوكالة.</p><span class="tag">خارج تونس</span>
+</a>
+<a class="card" href="https://eures.europa.eu/" target="_blank" rel="noopener noreferrer">
+<h3>🇪🇺 EURES</h3><p>معلومات وفرص عمل داخل أوروبا.</p><span class="tag">أوروبا</span>
+</a>
+<a class="card" href="https://www.francetravail.fr/" target="_blank" rel="noopener noreferrer">
+<h3>🇫🇷 France Travail</h3><p>البحث عن وظائف في فرنسا.</p><span class="tag">فرنسا</span>
+</a>
+<a class="card" href="https://www.arbeitsagentur.de/" target="_blank" rel="noopener noreferrer">
+<h3>🇩🇪 Arbeitsagentur</h3><p>وظائف ومعلومات التكوين المهني في ألمانيا.</p><span class="tag">ألمانيا</span>
+</a>
+</div>
+</section>
+
+<section class="panel">
+<h2>⚠️ قبل ما تترشّح</h2>
+<p class="muted">تثبّت من تاريخ العرض وشروطه ومصدره. ما تدفع حتى مبلغ لشخص يعدك بعقد مضمون أو تأشيرة مضمونة.</p>
+</section>
 </main>
+
+<footer><div class="wrap">© 2026 فرص عمل تونس · دليل للبحث عن فرص مناسبة</div></footer>
+
 <script>
-const resources=[
-{title:"ANETI — عروض التشغيل في تونس",desc:"ابدأ بالبحث في الوكالة الوطنية للتشغيل.",region:"local",field:"all",level:"all",exp:"all",url:"https://www.aneti.tn/",icon:"🇹🇳"},
-{title:"EURES — فرص عمل بأوروبا",desc:"اطّلع على الوظائف ومعلومات التنقل للعمل.",region:"international",field:"international",level:"all",exp:"all",url:"https://eures.europa.eu/",icon:"🇪🇺"},
-{title:"France Travail — فرنسا",desc:"ابحث عن وظائف وشروط الترشّح في فرنسا.",region:"international",field:"international",level:"all",exp:"all",url:"https://www.francetravail.fr/",icon:"🇫🇷"},
-{title:"Arbeitsagentur — ألمانيا",desc:"وظائف ومعلومات التكوين المهني Ausbildung.",region:"international",field:"international",level:"all",exp:"all",url:"https://www.arbeitsagentur.de/",icon:"🇩🇪"}
-];
-const form=document.getElementById("searchForm");
-function searchResources(ev){
- if(ev)ev.preventDefault();
- const region=document.getElementById("region").value;
- const field=document.getElementById("field").value;
- const level=document.getElementById("level").value;
- const exp=document.getElementById("experience").value;
- let list=resources.filter(x=>(region==="all"||(region==="أوروبا"&&x.region==="international")||(region!=="أوروبا"&&region!=="all"&&x.region==="local"))&&(field==="all"||x.field==="all"||x.field===field||field==="international"&&x.region==="international")&&(level==="all"||x.level==="all")&&(exp==="all"||x.exp==="all"));
- document.getElementById("results").innerHTML='<div class="section-title"><div><h2>نتائج الدليل</h2><p>هذه روابط بحث، موش عروض عمل مؤكدة.</p></div></div><div class="cards">'+(list.length?list.map(x=>'<a class="card" target="_blank" rel="noopener" href="'+x.url+'"><div class="icon">'+x.icon+'</div><h3>'+x.title+'</h3><p>'+x.desc+'</p><span class="tag">افتح الموقع الرسمي ↗</span></a>').join(""):'<div class="empty">ما لقيناش روابط مطابقة. جرّب اختيارات أخرى.</div>')+'</div>';
+const jobsList = document.getElementById('jobs-list');
+const statusBox = document.getElementById('jobs-status');
+let allJobs = [];
+
+function showJobs() {
+  const term = document.getElementById('search').value.trim().toLowerCase();
+  const country = document.getElementById('country').value;
+
+  const filtered = allJobs.filter(job => {
+    const text = [job.title, job.country, job.company, job.source]
+      .filter(Boolean).join(' ').toLowerCase();
+    const matchesTerm = !term || text.includes(term);
+    const matchesCountry = !country ||
+      (country === 'تونس'
+        ? /tunisie|تونس|tunisia/i.test(text)
+        : !/tunisie|تونس|tunisia/i.test(text));
+    return matchesTerm && matchesCountry;
+  });
+
+  jobsList.replaceChildren();
+
+  if (!filtered.length) {
+    jobsList.innerHTML = '<p class="status">ما لقيناش عروض مطابقة. جرّب بحث آخر أو افتح مواقع التشغيل الرسمية أعلاه.</p>';
+    return;
+  }
+
+  filtered.forEach(job => {
+    const card = document.createElement('article');
+    card.className = 'card';
+
+    const title = document.createElement('h3');
+    title.textContent = job.title || 'عرض عمل';
+
+    const company = document.createElement('p');
+    company.textContent = 'المصدر: ' + (job.company || job.source || 'غير محدد');
+
+    const countryLine = document.createElement('p');
+    countryLine.textContent = 'الوجهة: ' + (job.country || 'راجع تفاصيل العرض');
+
+    card.append(title, company, countryLine);
+
+    if (job.date) {
+      const date = document.createElement('p');
+      date.textContent = 'التاريخ: ' + job.date;
+      card.appendChild(date);
+    }
+
+    if (job.url && /^https:\/\//i.test(job.url)) {
+      const link = document.createElement('a');
+      link.className = 'button';
+      link.href = job.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'شوف تفاصيل العرض ↗';
+      card.appendChild(link);
+    }
+
+    jobsList.appendChild(card);
+  });
 }
-form.addEventListener("submit",searchResources);
-form.addEventListener("reset",()=>setTimeout(()=>document.getElementById("results").replaceChildren(),0));
-</script>
-<script>
+
 fetch('./jobs.json')
   .then(response => {
-    if (!response.ok) throw new Error('تعذّر تحميل الملف');
+    if (!response.ok) throw new Error('HTTP ' + response.status);
     return response.json();
   })
   .then(data => {
-    console.log('تم تحميل المصادر:', data.jobs);
+    if (!data || !Array.isArray(data.jobs)) {
+      throw new Error('صيغة ملف jobs.json غير صحيحة');
+    }
+    allJobs = data.jobs;
+    statusBox.textContent = 'تم تحميل ' + allJobs.length + ' عروض/مصادر. آخر تحديث: ' + (data.updated_at || 'غير محدد');
+    showJobs();
   })
-  .catch(error => console.error('خطأ:', error));
-</script>
-  <section id="live-jobs" dir="rtl" style="padding:20px;max-width:900px;margin:auto;color:white">
-  <h2>🌍 مصادر فرص العمل في تونس وأوروبا</h2>
-  <p id="jobs-status">جاري تحميل المصادر...</p>
-  <div id="jobs-list"></div>
-</section>
-
-<script>
-fetch('./jobs.json')
-  .then(response => {
-    if (!response.ok) throw new Error('تعذّر تحميل البيانات');
-    return response.json();
-  })
-  .then(data => {
-    const list = document.getElementById('jobs-list');
-    const status = document.getElementById('jobs-status');
-
-    status.textContent = 'آخر تحديث: ' +
-      (data.updated_at
-        ? new Date(data.updated_at).toLocaleString('ar-TN')
-        : 'غير معروف');
-
-    data.jobs.forEach(job => {
-      const card = document.createElement('div');
-      card.style.cssText =
-        'background:#1e293b;padding:16px;margin:12px 0;border-radius:12px';
-
-      const title = document.createElement('h3');
-      title.textContent = job.title || 'مصدر فرص عمل';
-
-      const country = document.createElement('p');
-      country.textContent = '🌍 البلد: ' + (job.country || 'غير محدد');
-
-      const company = document.createElement('p');
-      company.textContent = 'المصدر: ' + (job.company || 'غير محدد');
-
-      const link = document.createElement('a');
-      link.href = job.url;
-      link.textContent = '🔗 تصفّح عروض الشغل';
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.color = '#38bdf8';
-
-      card.append(title, country, company, link);
-      list.appendChild(card);
-    });
-  })
-  .catch(() => {
-    document.getElementById('jobs-status').textContent =
-      'تعذّر تحميل المصادر. حاول مرة أخرى لاحقًا.';
+  .catch(error => {
+    statusBox.textContent = 'ما نجّمش نحمل العروض. تثبّت من ملف jobs.json واتصال الإنترنت.';
+    console.error('Jobs loading error:', error);
   });
-</script>
-<section id="live-jobs" dir="rtl" style="padding:20px;max-width:900px;margin:auto;color:white">
-  <h2>🌍 فرص عمل في الخارج</h2>
-  <p id="jobs-status">جاري تحميل عروض الشغل...</p>
-  <div id="jobs-list"></div>
-</section>
 
-<script>
-fetch('./jobs.json')
-  .then(response => {
-    if (!response.ok) throw new Error('تعذر تحميل البيانات');
-    return response.json();
-  })
-  .then(data => {
-    const list = document.getElementById('jobs-list');
-    const status = document.getElementById('jobs-status');
-
-    status.textContent = 'آخر تحديث: ' +
-      new Date(data.updated_at).toLocaleString('ar-TN');
-
-    data.jobs.forEach(job => {
-      const card = document.createElement('div');
-      card.style.cssText =
-        'background:#1e293b;padding:16px;margin:12px 0;border-radius:12px';
-
-      const title = document.createElement('h3');
-      title.textContent = job.title;
-
-      const source = document.createElement('p');
-      source.textContent = 'المصدر: ' + job.company;
-
-      const link = document.createElement('a');
-      link.href = job.url;
-      link.textContent = '🔗 شوف تفاصيل العرض';
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.color = '#38bdf8';
-
-      card.append(title, source, link);
-      list.appendChild(card);
-    });
-  })
-  .catch(() => {
-    document.getElementById('jobs-status').textContent =
-      'تعذّر تحميل العروض. حاول مرة أخرى لاحقًا.';
-  });
+document.getElementById('searchBtn').addEventListener('click', showJobs);
+document.getElementById('resetBtn').addEventListener('click', () => {
+  document.getElementById('search').value = '';
+  document.getElementById('country').value = '';
+  showJobs();
+});
+document.getElementById('search').addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    showJobs();
+  }
+});
 </script>
 </body>
 </html>
