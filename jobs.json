@@ -1,37 +1,29 @@
-
 {
+  "updated_at": "2026-10-23T12:30:16.513563+00:00",
   "jobs": [
     {
-      "title": "عروض شغل في تونس",
-      "country": "تونس",
-      "category": "وظائف متنوعة",
-      "source": "الوكالة الوطنية للتشغيل والعمل المستقل",
-      "url": "https://www.aneti.tn/",
-      "note": "افتح الموقع الرسمي للاطلاع على عروض الشغل المتاحة."
+      "title": "عروض الشغل الدولية",
+      "country": "دولي",
+      "company": "ANETI International",
+      "url": "https://www.aneti-international.tn/en"
     },
     {
-      "title": "فرص عمل في أوروبا",
+      "title": "عروض الشغل في أوروبا",
       "country": "أوروبا",
-      "category": "وظائف متنوعة",
-      "source": "EURES",
-      "url": "https://eures.europa.eu/",
-      "note": "ابحث عن الوظائف وشروط التقديم والعمل القانوني."
+      "company": "EURES",
+      "url": "https://eures.europa.eu/index_en"
     },
     {
-      "title": "فرص عمل في فرنسا",
+      "title": "عروض الشغل في فرنسا",
       "country": "فرنسا",
-      "category": "وظائف متنوعة",
-      "source": "France Travail",
-      "url": "https://www.francetravail.fr/",
-      "note": "تحقق من شروط الوظيفة وإمكانية التقديم من تونس."
+      "company": "France Travail",
+      "url": "https://www.francetravail.fr/"
     },
     {
-      "title": "فرص عمل في ألمانيا",
+      "title": "عروض الشغل في ألمانيا",
       "country": "ألمانيا",
-      "category": "وظائف متنوعة",
-      "source": "وكالة العمل الألمانية",
-      "url": "https://www.arbeitsagentur.de/",
-      "note": "تحقق من شروط العمل والإقامة قبل التقديم."
+      "company": "Bundesagentur für Arbeit",
+      "url": "https://www.arbeitsagentur.de/"
     }
   ]
 }
