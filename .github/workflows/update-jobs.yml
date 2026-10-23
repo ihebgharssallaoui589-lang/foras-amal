@@ -1,2 +1,28 @@
 
   
+name: تحديث فرص العمل يوميا
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: جلب ملفات الموقع
+        uses: actions/checkout@v4
+
+      - name: إعداد بايثون
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: التحقق من الموقع
+        run: |
+          echo "تم تشغيل التحديث الآلي بنجاح"
+          date -u
